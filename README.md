@@ -7,4 +7,5 @@ Requires a MySQL database.
 For more info on CodeIgniter - google CodeIgniter:)
 
 https://github.com/EllisLab/CodeIgniter.git
+
 http://ellislab.com/codeigniter
