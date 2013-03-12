@@ -1,0 +1,506 @@
+/**
+* CSS
+* 
+*@ built by ConnectedCat
+*@ connectedcatmedia.com
+*/
+
+@font-face {
+	font-family: 'Edmondsans-Bold';
+	/*src: url('fonts/Edmondsans-Bold.eot');
+	src: url('fonts/Edmondsans-Bold.ttf') format('truetype'), url('fonts/Edmondsans-Bold.svg') format('svg');
+	*/
+	src: url('fonts/Edmondsans-Bold.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Edmondsans-Medium';
+	/*src: url('fonts/Edmondsans-Medium.eot');
+	src: url('fonts/Edmondsans-Medium.ttf') format('truetype'), url('fonts/Edmondsans-Medium.svg') format('svg');
+	*/
+	src: url('fonts/Edmondsans-Medium.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Edmondsans-Regular';
+	/*src: url('fonts/Edmondsans-Regular.eot');
+	src: url('fonts/Edmondsans-Regular.ttf') format('truetype'), url('fonts/Edmondsans-Regular.svg') format('svg');
+	*/
+	src: url('fonts/Edmondsans-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 10px;
+	font-family: 'Edmondsans-Medium', sans-serif;
+	color: #282828;
+	background: #fff;
+}
+
+h2 {
+	font: 13px 'Edmondsans-Medium', sans-serif;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+}
+
+body.section-1 { }
+body.section-2 { }
+body.section-3 { }
+
+/*------- Links -------*/
+a:link { text-decoration: none; color: #282828 }
+a:active { text-decoration: none; }
+a:visited { text-decoration: none; color: #282828 }
+a:hover { 
+text-decoration: none;
+cursor: pointer;
+}
+a img { border: none; }
+
+/*-------Menu-----*/
+
+#menu * {
+    list-style-type:none;
+}
+
+#menu { 
+	background: #fff;
+	position: fixed;
+	width: 900px;
+	bottom: 0px;
+	font: 13px 'Edmondsans-Medium';
+	letter-spacing: 1.5px;
+	float: left;
+	padding: 10px 0 10px 20px;
+	margin-bottom: 20px;
+	list-style: none;
+	z-index: 15;
+	color: #040;
+}
+
+#menu a { 
+    display: block; 
+    text-decoration: none;
+	text-transform: uppercase; 
+}
+
+#menu li ul li {
+    border: none;  
+    padding: 3px 15px 3px 0; 
+}
+
+#menu li ul li a {  
+    padding:3px 0; 
+	text-transform: none;
+	border: none;
+	letter-spacing: 1px;
+}
+
+#menu ul li {
+    float: left; 
+}
+
+#menu>ul>li {
+	border-right: 1px solid #888888;
+}
+
+#menu ul li a { 
+   	padding-right: 20px;
+	padding-top: 1px;
+	margin-left: 20px;
+}
+
+#menu li{ 
+    position:relative; 
+    float:left;
+}
+
+#menu>ul>li:last-child {
+	border: none;
+	display: inline;
+	padding-right: 21px;
+}
+
+#menu ul li ul, #menu:hover ul li ul, #menu:hover ul li:hover ul li ul{ 
+    display:none;
+    list-style-type:none;
+	background: #fff;
+	padding-bottom: 10px;
+	padding-top: 5px;
+}
+
+#menu:hover ul, #menu:hover ul li:hover ul, #menu:hover ul li:hover ul li:hover ul { 
+    display:block;
+	clear: both;
+}
+
+#menu:hover ul li:hover ul li:hover ul { 
+    position: absolute;
+    margin-left: 145px;
+    margin-top: -22px;
+}
+
+#menu:hover ul li:hover ul { 
+    position: absolute;
+    margin-top: 1px;
+}
+#menu>ul>li:hover>ul { 
+    bottom:100%;
+}
+
+.selected {
+	background-color: #e9e9e9;
+}
+
+/*-----Content------*/
+
+#content {
+    height: 100%;
+    margin: 40px 0 0 40px;
+    top: 0;
+}
+
+#content div {
+	display: inline;
+	float: left;
+	margin-right: 10px;
+}
+
+#content div img {
+	margin-bottom: 5px;
+}
+
+#content div h3 {
+	font: 10px 'Edmondsans-Medium';
+	letter-spacing: 0.5px;
+}
+
+#content div {
+	font: 10px 'Edmondsans-Regular';
+}
+
+#content ul
+
+.section {
+}
+
+#section-name {
+	font: 14px 'Edmondsans-Medium';
+	letter-spacing: 1px;
+	text-transform: lowercase;
+	transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg); /* IE 9 */
+	-webkit-transform: rotate(-90deg); /* Safari and Chrome */
+	-o-transform: rotate(-90deg); /* Opera */
+	-moz-transform: rotate(-90deg); /* Firefox */
+}
+
+#retouch-notice {
+	clear: both; 
+	float: left; 
+	position: fixed;
+	left: 30px;
+	bottom: 70px;
+	background-color: #fff;
+	font: 12px 'Edmondsans-Regular';
+	padding: 5px 5px 5px 10px;
+
+}
+
+/*------Slideshow----------*/
+
+#slides {
+	list-style: none;
+	height: 1000px;
+	width: 1333px;
+}
+
+#slides img {
+	margin: auto;
+}
+
+#about {
+	width: 750px;
+	font: 12px 'Edmondsans-Regular' !important;
+	line-height: 17px;
+	color: #282828;
+	letter-spacing: 0.5px;
+	clear: both;
+	margin-top: 20px;
+}
+
+#about h2 {
+	font: 13px 'Edmondsans-Medium';
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+}
+
+#about p {
+	line-height: 20px;
+}
+
+/*------Clients page-------*/
+
+#clients {
+	font: 13px 'Edmondsans-Regular';
+	letter-spacing: 0.5px;
+	color: #282828;
+	width: 800px;
+}
+#clients ul {
+	list-style-type: none;
+}
+
+#clients li {
+	margin-bottom: 8px;
+	width: 200px;
+	float: left;
+}
+
+#clients a {
+	text-decoration: none;
+	color: #282828;
+}
+
+#clientsTable a {
+	display: block;
+    color: #282828;
+    text-decoration: none;
+	padding-right: 45px;
+	margin-bottom: 8px;
+}
+
+#clientsTable td {	
+	vertical-align: top !important;
+}
+
+/*------Press Page---------*/
+
+#press {
+	list-style: none;
+	font: 13px 'Edmondsans-Regular';
+	color: #282828;
+	letter-spacing: 0.5px;
+	width: 800px;
+	position: absolute;
+	top: 40px;
+	left: 40px;
+}
+
+#press-links {
+	margin-left: 20px;
+}
+
+#press ul {
+	list-style: none;
+	margin-bottom: 25px;
+}
+
+#press h2 {
+	font: 11px 'Edmondsans-Bold';
+	letter-spacing: 1.5px;
+	margin-bottom: 8px;
+	text-transform: uppercase;
+}
+
+#press a {
+	display: block;
+	text-decoration: none;
+	color: #282828;
+}
+
+/*----Mailer page----------*/
+
+#mailer {
+	color: #282828;
+	font: 12px 'Edmondsans-Medium';
+	letter-spacing: 1px;
+}
+
+#mailer input, textarea {
+	display: block;
+	margin: 10px 0 10px 0;
+	color: #000;
+	font: 12px 'Edmondsans-Medium';
+	letter-spacing: 1px;
+}
+
+#mailer .button {
+	border: 1px solid grey;
+	padding: 3px;
+}
+
+/*------Login page-------------*/
+
+#admin_login, #login_redirect {
+	width: 265px;
+	margin: 250px auto 0;
+	padding: 10px;
+	border: solid #333 2px;
+	border-radius: 10px;
+}
+
+#admin_login, #login_redirect h2 {
+	font: 13px 'Edmondsans-Medium';
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+}
+
+#admin_login input[type=text], input[type=password]{
+	display: block;
+	background-color: #BBB;
+	margin: 0 0 5px 0;
+	padding: 5px 2px;
+	width: 245px;
+	border: 5px;
+	border-radius: 3px;
+}
+
+#admin_login input[type=submit], form a {
+	border: none;
+	margin-right: 1em;
+	padding: 6px;
+	text-decoration: none;
+	font-size: 12px;
+	border-radius: 4px;
+	background-color: #BBB;
+}
+
+#admin_login input[type=submit]:hover, form a:hover {
+	background-color: #AAA;
+	cursor: pointer;
+}
+
+#forgot {
+	width: 300px;
+	margin: 250px auto 0;
+	padding: 10px;
+	border: solid #333 2px;
+}
+
+#forgot  h2 {
+	font: 13px 'Edmondsans-Bold';
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+}
+
+/*--------Content Management Styles-------*/
+#cms_menu {
+	background: #fff;
+	top: 0px;
+	font: 14px 'Edmondsans-Medium';
+	letter-spacing: 1.5px;
+	float: left;
+	padding: 10px 0 10px 20px;
+	margin-bottom: 20px;
+	z-index: 15;
+	color: #040;
+}
+
+#cms_menu ul {
+	list-style: none;
+}
+#cms_menu li {
+	display:inline;
+}
+#cms_menu a { 
+    display: block; 
+    text-decoration: none;
+	text-transform: uppercase; 
+}
+
+#image_upload {
+	clear: both;
+	width: 300px;
+	margin: 20px 0 20px 20px;
+	padding: 10px;
+	border: solid #333 2px;
+	border-radius: 10px;
+}
+
+#image_upload textarea{
+	width: 280px;
+}
+
+#image_upload input[type=submit] {
+	display: block;
+	margin-top: 5px;
+}
+
+#image_upload h2 {
+	font-size: 12px;
+	margin: 5px 0;
+}
+
+#gallery {
+	margin: 20px 0 20px 20px;
+	position: absolute;
+	top: 0;
+	left: 350px;
+}
+
+#gallery_image {
+	padding: 5px;
+	float: left;
+	width: 230px;
+	border: solid #333 2px;
+	border-radius: 10px;
+}
+
+#gallery_image textarea {
+	width: 190px;
+	height: 50px;
+}
+
+#content_management {
+	position: absolute;
+	top: 80px;
+	margin-left: 20px;
+}
+
+#front_page_admin {
+	padding: 10px;
+	border: solid #333 2px;
+	border-radius: 10px;
+}
+
+#front_page_admin textarea {
+	width: 800px;
+	height: 200px;
+}
+
+#clients_page_admin {
+	padding: 10px;
+	border: solid #333 2px;
+	border-radius: 10px;
+}
+
+#press_page_admin {
+	padding: 10px;
+	border: solid #333 2px;
+	border-radius: 10px;
+}
+
+/*--------Footer---------*/
+
+#footer {
+    font: 8px 'Edmondsans-Regular';
+    letter-spacing: 1.5px;
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+}
+#footer a{
+	padding-right: 15px;
+}
